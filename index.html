@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat App</title>
+</head>
+<body>
+<div id="msgBox"></div>
+<div id="sendMsg">
+    <input type="text" id="usrText" placeholder="Say Somthing....">
+</div>
+
+
+
+
+
+
+        <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+import { getDatabase,ref, onChildAdded,set, remove ,onChildremoved } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+const firebaseConfig = {
+    apiKey: "AIzaSyAdl0mTJBNDN70MYt5F7I6oJJ6usw-bfTY",
+    authDomain: "chatapp-48ce7.firebaseapp.com",
+    projectId: "chatapp-48ce7",
+    storageBucket: "chatapp-48ce7.appspot.com",
+    messagingSenderId: "903105921108",
+    appId: "1:903105921108:web:2a3b27c9c62b01c4986dc1"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+    </script>
+</body>
+</html>
